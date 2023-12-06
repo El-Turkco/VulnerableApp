@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/post.css" type="text/css">
+  
+    <title>XSS</title>
+</head>
+<body>
+    <div class="xss">
+        <h1>XSS CHALLENGE </h1>
+        <a class="created" href="https://github.com/El-Turkco"><h3>Created by ElTurco</h3></a>
+        <a id="new_post" class="post" href="/posts">Posts</a>
+      </div>
+      <div class="container4"></div>
+      <!--The From-->
+      <div id="Myform" class="form-popup">
+        <form action="/create/post" method="POST" type="submit">
+          <% if (typeof msg != "undefined"){ %>
+            <div class="alert">
+             <h3><%= msg %></h3> 
+            </div> 
+          <% } %>
+            <h2> Add the Post</h2><br>
+            
+            <label class="lbltitle" for="URL">Title</label><br>
+            <div class="container1"></div>
+            <input type="text" class="title" placeholder="Title" name="title" required><br><br>
+            
+            <label class="lbldest" for="dest">Description</label><br>
+            <div class="container2"></div>
+            <input type="text" class="dest" placeholder="Description" name="dest" required><br><br>
+
+            <label class="lblurl" for="dest">Url</label><br>
+            <div class="container3"></div>
+            <input type="text" id="url"class="url" placeholder="URL" name="url" required><br><br>
+            
+           <button type="submit" class="postbtn">POST</button>
+            
+        </form>
+
+      </div>
+     
+  
+</body>
+</html>

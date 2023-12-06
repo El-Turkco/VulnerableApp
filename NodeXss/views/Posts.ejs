@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/script.js"></script>
+    <link rel="stylesheet" href="../css/posts.css" type="text/css">
+    <title>Posts</title>
+</head>
+<body>
+    <div class="xss">
+        <h1>Posts</h1>
+        <a class="created" href="https://github.com/El-Turkco"><h3>Created by ElTurco</h3></a>
+        <a id="new_post" class="post" href="/create/post"><h3>New Post</h3></a>
+      </div>
+      <div class="container1"></div>
+      <% for (post of posts){ %>
+    <div id="forms" class="postsss">
+        <h1 class="title"> <%= post.title %></h1>
+        <p class="dest"> <%= post.description %></p>
+        <a id="link" class="url" style="text-decoration: none;" href=<%= post.url %>><%= post.url %></a>
+    </div>
+   <% }  %> 
+</body>
+
+
+</html>

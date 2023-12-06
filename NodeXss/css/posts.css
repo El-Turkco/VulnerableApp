@@ -1,0 +1,55 @@
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+  }      
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .xss {
+    padding: 25px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+  }
+  .post1{
+    display: inline-flex;
+  }
+  .container1{
+    padding: 15px;
+    padding-right: 10px;
+  }
+  .post1{
+    border: 10px;
+    color: white;
+  }
+  .postuser{
+    color: white;
+    font-size: 25px;
+    font-family:sans-serif
+  }
+  .post{
+    text-decoration: none;
+    color: white;
+  }
+  .created{
+    text-decoration: none;
+    color: white;
+  }
+  .postsss{
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: black;
+  }
+  .url{
+    color: white;
+    font-size: 20px;
+  }
+  .title{
+    color: white;
+  }
+  .dest{
+    color: white;
+  }

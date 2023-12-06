@@ -1,7 +1,7 @@
 const config={
     
     db: {
-        host:"localhost",
+        host:"mysql",
         user:"root",
         password:"2001",
         database:"post",

@@ -6,6 +6,7 @@ const config={
         user:"root",
         password:"2001",
         database:"post",
+        dialect:"mysql",
     },
 
 };

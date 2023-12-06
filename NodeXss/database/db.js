@@ -3,10 +3,10 @@ const config= require("../config");
 
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize(config.db.database,config.db.user,config.db.password,config.db.port,{
+const sequelize = new Sequelize(config.db.database,config.db.user,config.db.password,config.db.port,config.db.dialect,{
     host:config.db.host,
     port:config.db.port,
-    dialect:"mysql",
+    dialect:config.db.dialect,
     storage:"./session.mysql"
 });
 
